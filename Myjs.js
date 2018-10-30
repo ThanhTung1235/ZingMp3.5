@@ -1,6 +1,6 @@
 getMusic();
 var music_content = document.getElementById("content");
-
+var play_song = document.getElementById("play");
 function getMusic() {
     var APIurl = "https://2-dot-backup-server-002.appspot.com/_api/v2/songs/get-free-songs";
     var xmlHttp = new XMLHttpRequest();
@@ -12,7 +12,7 @@ function getMusic() {
                 var music_item= '<li>';
                 music_item += '<label class="id"> ' + (i+1) + '</label>';
                 music_item += '<span>';
-                music_item += '<img height="70px" src="'+ obj[i].thumbnail +'" alt="">';
+                music_item += '<img height="70px" onclick="PlayMusic(\''+obj[i].link +'\')" src="'+ obj[i].thumbnail +'" alt="">';
                 music_item += '</span>';
                 music_item += '<label class="name">'+ obj[i].name + '</label>';
                 music_item += '</li>';
@@ -26,3 +26,7 @@ function getMusic() {
     xmlHttp.send();
 }
 
+function PlayMusic(link) {
+    play_song.src = link;
+    alert(link);
+}
