@@ -1,1 +1,1 @@
-<?php header('Location: /Login.html'); ?>
+<?php header('Location: /Blade/ZingMp3.html'); ?>
