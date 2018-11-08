@@ -1,0 +1,1 @@
+<?php header('Location: /ZingMp3.5.html'); ?>
