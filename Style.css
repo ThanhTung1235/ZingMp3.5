@@ -9,9 +9,31 @@ body{
 .container{
     margin: 0 10%;
 }
-
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 /*header*/
-
+#login{
+    display: inline-block;
+}
 .head{
     background: #1C1C1C;
     height: 60px;
@@ -48,8 +70,12 @@ header .title span{
     cursor: pointer;
     border: 3px solid #fff;
     background: transparent;
-    font-size: 16px;
+
+}
+.btn_booknow a{
     color: white;
+    font-size: 16px;
+    text-decoration: none;
 }
 .logo{
     padding: 10px;
@@ -191,3 +217,64 @@ audio{
 
 
 /**/
+/*footer */
+footer{
+    background-image: url("Assets/Footer_banner.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    font-family: 'Roboto';
+}
+footer>div{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 500px;
+}
+.article-footer{
+    width: 50%;
+    padding-bottom: 90px;
+
+}
+.article-title {
+    color: #0090FF;
+    font-size: 35px;
+    font-weight: bold;
+}
+.article-content{
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+
+}
+.info-user p {
+    color: white;
+    padding: 10px 0 5px 0 ;
+}
+.info-user>.btn_submit {
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    border-radius: 5px;
+    width: 175px;
+    height: 50px;
+    font-size: 20px;
+}
+.content-footer{
+    padding-top: 40px;
+    border-bottom: 1px solid #636D75;
+
+}
+.social{
+    padding-top: 20px;
+    border: none;
+}
+.social .article-content{
+    color: #636D75;
+    margin-top: 10px;
+}
+/*  */
+
+
+
+
+
+
