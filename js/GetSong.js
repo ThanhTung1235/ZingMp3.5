@@ -1,7 +1,7 @@
 getSongs();
 function getSongs() {
     var music_content = document.getElementById("content");
-    var getSong = "https://2-dot-backup-server-002.appspot.com/_api/v2/songs";
+    var getSong = "https://2-dot-backup-server-001.appspot.com/_api/v2/songs";
     if (localStorage.getItem("token") != null){
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
@@ -34,10 +34,10 @@ function getSongs() {
         xhttp.setRequestHeader("Authorization", "Basic " + localStorage.getItem("token"));
         xhttp.send();
     }
-    // else {
-    //     alert("Bạn hãy đăng nhập để sử dụng tính năng này")
-    //     window.location.replace("Login.html");
-    // }
+    else {
+        alert("Bạn hãy đăng nhập để sử dụng tính năng này")
+        window.location.replace("Login.html");
+    }
 
 }
 

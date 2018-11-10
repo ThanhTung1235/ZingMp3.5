@@ -1,4 +1,4 @@
-var login = "https://2-dot-backup-server-002.appspot.com/_api/v2/members/authentication";
+var login = "https://2-dot-backup-server-001.appspot.com/_api/v2/members/authentication";
 
 var btn = document.forms["Login-form"]["btn"];
 btn.onclick = function () {

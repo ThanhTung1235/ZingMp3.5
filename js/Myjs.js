@@ -7,7 +7,7 @@ var play_song = document.getElementById("play");
 
 
 function getMusic() {
-    var getSongFree = "https://2-dot-backup-server-002.appspot.com/_api/v2/songs/get-free-songs";
+    var getSongFree = "https://2-dot-backup-server-001.appspot.com/_api/v2/songs/get-free-songs";
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
